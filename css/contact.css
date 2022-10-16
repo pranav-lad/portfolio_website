@@ -9,6 +9,9 @@
     width: 100%;
     justify-content: center;
 }
+#contact-form textarea{
+    height: 20vh;
+}
 #contact-form {
     justify-content: center;
     width: 50%;
