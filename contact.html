@@ -7,11 +7,11 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-            crossorigin="anonymous">
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="css/contact.css">
     </head>
     <body>
         <!-- ---------------- start navbar ---------------- -->
@@ -37,9 +37,9 @@
                                     id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto py-4 py-md-0">
                                         <li class="nav-item pl-4 pl-md-0 ml-0
-                                            ml-md-4 active">
+                                            ml-md-4">
                                             <a class="nav-link -toggle"
-                                                data-toggle="" href="#"
+                                                data-toggle="" href="index.html"
                                                 role="button"
                                                 aria-haspopup="true"
                                                 aria-expanded="false">Home</a>
@@ -61,8 +61,8 @@
                                             <a class="nav-link" href="#">Personal Interest</a>
                                         </li>
                                         <li class="nav-item pl-4 pl-md-0 ml-0
-                                            ml-md-4">
-                                            <a class="nav-link" href="contact.html">Contact</a>
+                                            ml-md-4 active">
+                                            <a class="nav-link" href="#">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -73,64 +73,67 @@
                 </div>
             </div>
         </nav>
-        <section class="landing-page" style="height: 100vh; margin-top: 90px;">
-            <div class="sides">
-                <div class="left">
-                    <h1>Shailesh Galande</h1>
-                    <p>Assistant Professor,
-
-                        Computer Engineering Department, PCCoE</p>
-                    <a href="#">Read More</a>
-                </div>
-                <div class="right">
-                <img src="img/right.jpg" alt="">
-                </div>
-            </div>
-        </section>
-        
-        <section class="qualification">
-            <div class="block">
-            <h2>Qualificaton</h2>
-            <p>ME Computer Networks, BE Computer Engineering</p>
-            </div>
-            <div class="block">
-            <h2>Reseach Area</h2>
-            <p>Machine Learning, Information Security, Databases</p>
-            </div>
-        </section>
-        
-
-        <footer> <div class="container"> <div class="sec aboutus"> <h2>ABOUT ME</h2>
-                    I am Associate Professor at Pimpri Chinchwad College of
-                    Engineering Pune. <ul class="sci"> <li> <a
-                                href="https://www.facebook.com/amit.panchwadkar"><i
-                                    class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li><li> <a
-                                href="https://scholar.google.com/citations?user=lPumnMgAAAAJ&hl=en"><i
-                                    class="fa fa-book" aria-hidden="true"></i></a>
-                        </li><li> <a
-                                href="https://www.linkedin.com/in/amit-panchwadkar-142a1720/"><i
-                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li><li> <a
-                                href="https://amit-panchwadkar.github.io/portfolio/"><i
-                                    class="fa fa-chrome" aria-hidden="true"></i></a>
-                        </li></ul> </div><div class="sec quicklinks"> <h2>Quick
-                        Links</h2> <ul> <li> <a
-                                href="src/research_nd_consultancy.html">Research
-                                and consultancy</a> </li><li> <a
-                                href="src/student_project.html">student project</a>
-                        </li><li><a href="src/courses.html">Courses</a></li><li><a
-                                href="src/album.html">Album</a></li></ul> </div><div
-                    class="sec contact"> <h2>Contact Info</h2> Phone : <a
-                        href="telto:+918149450061" target="blank">+91 8149450061</a>
-                    Mail : <a href="mailto:amit.panchwadkar@pccoepune.org"
-                        target="_blank">amit.panchwadkar@pccoepune.org</a>
-                </div></div><div class="copyrightText"> <p>Copyright | 2022 Amit
-                    Panchwadkar. All Rights Reserved.</p></div>
-        </footer>
+        <!-- --------------------------------------- end navbar ---------------------------------- -->
 
 
         <!-- ---------------- end navbar ---------------- -->
+        <section id="contact">
+            <h1 class="section-header">Contact</h1>
+            <div class="contact-wrapper">
+                <!-- Left contact page --> 
+              <form id="contact-form" class="form-horizontal" role="form">
+                <div class="form-group">
+                  <div class="">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                  </div>
+                </div>
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                <input class="send-button" type="submit" value="Send">
+              </form>
+            <!-- Left contact page --> 
+                <div class="direct-contact-container">
+                  <ul class="contact-list">
+                    <li class="list-item"><img src="img/icon/location.png" width=""  alt="fav icon"> &nbsp;<b>City  :</b>  Pimpri Chinchwad</li>
+                    <li class="list-item"><img src="img/icon/phone.png" width=""  alt="fav icon"> &nbsp;<b>Phone :</b>  +91 - 9860503703</li>
+                    <li class="list-item"><img src="img/icon/mail.png" width=""  alt="fav icon"> &nbsp;<b>Email :</b>  shailesh.galande@pccoepune.org</li>
+                  </ul>
+                </div>
+            </div>
+          </section>  
+            
+          <footer> <div class="container"> <div class="sec aboutus"> <h2>ABOUT ME</h2>
+            I am Associate Professor at Pimpri Chinchwad College of
+            Engineering Pune. <ul class="sci"> <li> <a
+                        href="https://www.facebook.com/amit.panchwadkar"><i
+                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li><li> <a
+                        href="https://scholar.google.com/citations?user=lPumnMgAAAAJ&hl=en"><i
+                            class="fa fa-book" aria-hidden="true"></i></a>
+                </li><li> <a
+                        href="https://www.linkedin.com/in/amit-panchwadkar-142a1720/"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li><li> <a
+                        href="https://amit-panchwadkar.github.io/portfolio/"><i
+                            class="fa fa-chrome" aria-hidden="true"></i></a>
+                </li></ul> </div><div class="sec quicklinks"> <h2>Quick
+                Links</h2> <ul> <li> <a
+                        href="src/research_nd_consultancy.html">Research
+                        and consultancy</a> </li><li> <a
+                        href="src/student_project.html">student project</a>
+                </li><li><a href="src/courses.html">Courses</a></li><li><a
+                        href="src/album.html">Album</a></li></ul> </div><div
+            class="sec contact"> <h2>Contact Info</h2> Phone : <a
+                href="telto:+918149450061" target="blank">+91 8149450061</a>
+            Mail : <a href="mailto:amit.panchwadkar@pccoepune.org"
+                target="_blank">amit.panchwadkar@pccoepune.org</a>
+        </div></div><div class="copyrightText"> <p>Copyright | 2022 Amit
+            Panchwadkar. All Rights Reserved.</p></div>
+</footer>
         
         <script
             src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
