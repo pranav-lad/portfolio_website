@@ -16,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     margin: 97px auto;
+    background-color: white;
   }
   
   .container1 h1 {
@@ -26,14 +27,14 @@
   /* reviews  */
   
   .reviews {
-    background-color: #e6e4e173;
+    /* background-color: #e6e4e173; */
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    box-shadow: 0 0 8px #000;
+    /* box-shadow: 0 0 8px #000; */
   }
   
   /* review box  */
@@ -41,13 +42,16 @@
   .box {
     background-color: #cecece;
     width: 350px;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 25px;
     margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 8px #000;
+    /* border-radius: 10px;
+    box-shadow: 0 0 8px #000; */
+    border-radius: 34px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 34px #d5d5d5, -15px -15px 34px #ebebeb;
   }
   
   .profile {
