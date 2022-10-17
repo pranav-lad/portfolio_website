@@ -21,7 +21,13 @@ footer .container {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100vw;
+    width: 83vw;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: 0;
+    padding-top: 20px;
 }
 
 footer .container .sec {
@@ -160,7 +166,7 @@ footer {
 
 @media (max-width:991px) {
     footer {
-        padding: 25px;
+        padding: 18px;
         padding-bottom: 0
     }
 
@@ -181,7 +187,7 @@ footer {
 
     footer .copyrightText {
         width: 100%;
-        padding: 8px 40px;
+        padding: 8px 4px;
         text-align: center;
         color: #cee0e4
     }

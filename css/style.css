@@ -1,3 +1,7 @@
+.landing-page{
+    height: fit-content;
+    margin-top: 90px;
+}
 .landing-page, .sides {
     width: 100%;
     height: fit-content;
@@ -63,7 +67,35 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 880px) {
+    .landing-page .sides{
+        margin-top: 60px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-page .sides .left, .landing-page .sides .right {
+        width: 50%;
+        height: fit-content;
+        padding-top: 30px;
+    }
+    .landing-page .sides .left h1{
+        font-size: 36px;
+    }
+    .landing-page .sides .left{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .qualification {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .qualification .block{
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 341px) {
     .landing-page .sides{
         margin-top: 60px;
         flex-direction: column-reverse;
