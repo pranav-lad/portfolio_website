@@ -18,12 +18,12 @@ html * {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-size: 100%;
   font-family: "Droid Serif", serif;
   color: #7f8c97;
   background-color: #e9f0f5;
-}
+} */
 
 a {
   color: #acb7c0;
@@ -45,13 +45,13 @@ h1, h2 {
 Modules - reusable parts of our design
 
 -------------------------------- */
-.cd-container {
+.x33p .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
   max-width: 1170px;
   margin: 0 auto;
 }
-.cd-container::after {
+.x33p .cd-container::after {
   /* clearfix */
   content: "";
   display: table;

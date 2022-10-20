@@ -14,6 +14,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     background: #212121;
+    
 }
 
 footer .container {
@@ -25,7 +26,7 @@ footer .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 0;
-    margin-right: auto;
+    margin-right: 0;
     margin-left: 0;
     padding-top: 20px;
 }
@@ -158,6 +159,16 @@ footer .copyrightText {
 footer .copyrightText p {
     margin: 0;
     margin-bottom: 5px
+}
+
+footer{
+    display: flex;
+    justify-content: center !important;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: flex;
+    justify-content: center;
 }
 
 footer {
