@@ -3,9 +3,9 @@
 Primary style
 
 -------------------------------- */
-body {
-   padding-top: 102px;
-}
+/* body {
+   padding-top: 102px; */
+/* } */
 
 html * {
   -webkit-font-smoothing: antialiased;
@@ -25,17 +25,17 @@ html * {
   background-color: #e9f0f5;
 } */
 
-a {
+.x33p a {
   color: #acb7c0;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
 
-img {
+.x33p img {
   max-width: 100%;
 }
 
-h1, h2 {
+.x33p h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
