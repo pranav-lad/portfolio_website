@@ -7,7 +7,7 @@ Primary style
    padding-top: 102px; */
 /* } */
 
-html * {
+.timeline-section  {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
