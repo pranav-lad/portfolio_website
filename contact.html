@@ -11,8 +11,8 @@
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="css/contact.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="css/contact.css">
     </head>
     <body>
         <!-- ---------------- start navbar ---------------- -->
@@ -23,7 +23,7 @@
                         <div class="col-12">
                             <nav class="navbar navbar-expand-md navbar-light">
                                 <a class="navbar-brand"
-                                    href="index.html" target=""><b style="font-size: 30px">S.G.</b></a>
+                                    href="index.html" target=""><b style="font-size: 30px; color: black;">S.G.</b></a>
 
                                 <button class="navbar-toggler" type="button"
                                     data-toggle="collapse"
@@ -67,7 +67,6 @@
                                         </li>
                                     </ul>
                                 </div>
-
                             </nav>
                         </div>
                     </div>
@@ -76,34 +75,43 @@
         </nav>
 
         <!-- ---------------- end navbar ---------------- -->
-        <section id="contact">
-            <h1 class="section-header">Contact</h1>
-            <div class="contact-wrapper">
-                <!-- Left contact page --> 
-              <form id="contact-form" class="form-horizontal" role="form">
-                <div class="form-group">
-                  <div class="">
-                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="">
-                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                  </div>
-                </div>
-                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-                <input class="send-button" type="submit" value="Send">
-              </form>
-            <!-- Left contact page --> 
-                <div class="direct-contact-container">
-                  <ul class="contact-list">
-                    <li class="list-item"><img src="img/icon/location.png" width=""  alt="fav icon"> &nbsp;<b>City  :</b>  Pune</li>
-                    <li class="list-item"><img src="img/icon/phone.png" width=""  alt="fav icon"> &nbsp;<b>Phone :</b>  +91 - 9860503703</li>
-                    <li class="list-item"><img src="img/icon/mail.png" width=""  alt="fav icon"> &nbsp;<b>Email :</b>  shailesh.galande@pccoepune.org</li>
-                  </ul>
+        <div class=" mainbox">
+            <div class="leftbox">
+                <div class="content"><div class="img"></div>
+                <div class="img2"></div>
                 </div>
             </div>
-          </section>  
+            <div class="rightbox">
+            
+    
+                <div class="form" style="margin-top: 120px; margin-bottom: 70px;">
+                    <form name="google-sheet" method="POST">
+                        <label for="name">NAME</label><br>
+                        <input required type="text" id="name"   name="name" placeholder="enter your full name">
+                        <br>
+                        
+                        <label for="email">EMAIL</label>
+                        <br>
+                        <input required type="email" id="email" name="email" placeholder="enter you Email">
+                        <br>
+                        <label for="details">DETAILS</label>
+                        <br>
+                        <input type="text" id="details" name="details" placeholder="enter your message here">
+                        <br>
+                        <input class="submitbtn" name="submit" type="submit" value="SUBMIT">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="direct-contact-container">
+            <ul class="contact-list">
+              <li class="list-item"><img src="img/icon/location.png" width=""  alt="fav icon"> &nbsp;<b>City  :</b>  Pune</li>
+              <li class="list-item"><img src="img/icon/phone.png" width=""  alt="fav icon"> &nbsp;<b>Phone :</b>  +91 - 9860503703</li>
+              <li class="list-item"><img src="img/icon/mail.png" width=""  alt="fav icon"> &nbsp;<b>Email :</b>  shailesh.galande@pccoepune.org</li>
+            </ul>
+          </div>
             
           <!-- start footer -->
        <footer style="display: flex"> <div class="container"> <div class="sec aboutus"> <h2>ABOUT ME</h2>
@@ -136,7 +144,7 @@
                     href="contact.html">Contact</a></li></ul> </div><div
         class="sec contact"> <h2>Contact Info</h2> Phone : <a
             href="telto:+918149450061" target="blank">+91 9860503703  </a>
-        Mail : <a href="mailto:amit.panchwadkar@pccoepune.org"
+        Mail : <a href="mailto:shailesh.galande@pccoepune.org"
             target="_blank">shailesh.galande@pccoepune.org</a>
       </div></div><div class="copyrightText"> <p>Copyright | 2022 Webish. All Rights Reserved.</p></div>
       </footer>
@@ -152,5 +160,24 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
             crossorigin="anonymous"></script>
+            
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbztOtwnQB6lBnsCgEuNN5dEJZqib1WZ0TU6WLKH4LesLiYYQXT2rgou1bYkrvYsbbtNlg/exec'
+                const form = document.forms['google-sheet']
+        
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, {
+                            method: 'POST',
+                            body: new FormData(form)
+                        }).then(response =>{ 
+                            alert("Thanks for Contacting us..! We Will Contact You Soon...");
+                            serTimeout(function(){
+                                msg.innderHTML = ""
+                            },5000)
+                            form.reset();
+                            }).catch(error => console.error('Error!', error.message))
+                })
+            </script>
     </body>
 </html>
